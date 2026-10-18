@@ -4,6 +4,7 @@ import Posts from "./pages/Posts";
 import PostDetails from "./pages/PostDetails";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
+import CommentCard from "../components/CommentCard";
 
 function App() {
   return (
