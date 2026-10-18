@@ -1,6 +1,6 @@
 function CommentCard({ comment }) {
   return (
-    <div>
+    <div className="comment">
       <h3>{comment.name}</h3>
       <p>{comment.email}</p>
       <p>{comment.body}</p>

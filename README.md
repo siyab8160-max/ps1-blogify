@@ -1,16 +1,56 @@
-# React + Vite
+# PS1 - Blogify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Blogify is a simple React blog reader application built using React and React Router.
 
-Currently, two official plugins are available:
+## Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Blogify allows users to browse blog posts, search posts by title, open an individual post, and read its comments.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- React Router
+- JavaScript
+- CSS
+- JSONPlaceholder API
 
-## Expanding the ESLint configuration
+## API Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+JSONPlaceholder:
+
+https://jsonplaceholder.typicode.com/posts
+
+The application uses the API to fetch:
+
+- Blog posts
+- Individual post details
+- Comments for each post
+
+## Routes
+
+| Route | Description |
+|---|---|
+| `/` | Home page |
+| `/posts` | Displays all blog posts |
+| `/posts/:id` | Displays a single post and its comments |
+| `*` | Page Not Found |
+
+## Features
+
+- View all blog posts
+- Search posts by title
+- View individual posts
+- View comments
+- Loading state while fetching data
+- Error handling
+- Navigation using React Router
+- 404 Page Not Found
+- Reusable PostCard component
+- Reusable CommentCard component
+
+## How to Run
+
+Clone the repository and install the dependencies:
+
+```bash
+npm install

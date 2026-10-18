@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function PostCard({ post }) {
   return (
-    <div>
+    <div className="post-card">
       <Link to={`/posts/${post.id}`}>
         <h2>{post.title}</h2>
       </Link>

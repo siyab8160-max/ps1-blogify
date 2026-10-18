@@ -33,6 +33,7 @@ function Posts() {
             <h1>All Posts</h1>
 
             <input
+                className="search"
                 placeholder="Search"
                 onChange={(e) => setSearch(e.target.value)}
             />
